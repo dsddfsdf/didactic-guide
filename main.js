@@ -152,7 +152,7 @@ bot.onText(/\/music (.+)/, async (msg, match) => {
     bot.sendMessage(chatId, `Quyidagi variantlar topildi:\n${tracks.map((track, index) => `${index + 1}. ${track.name} - ${track.artists[0].name}`).join('\n')}`, options);
 
     // Add ad message
-    bot.sendMessage(chatId, '📣 Check out our sponsor for the best music deals and discounts! 🎶');
+    bot.sendMessage(chatId, '📣Sizda Reklama bormi admin bilan gaplashing:https://t.me/Optom_Kasmetika_Admin🎶');
   } catch (error) {
     console.error('Spotify search error:', error);
   }
@@ -182,7 +182,7 @@ bot.on('callback_query', async (query) => {
         });
 
         // Add ad message
-        bot.sendMessage(chatId, '📣 Check out our sponsor for the best music deals and discounts! 🎶');
+        bot.sendMessage(chatId, '📣Sizda Reklama bormi admin bilan gaplashing:https://t.me/Optom_Kasmetika_Admin🎶');
       } else {
         bot.sendMessage(chatId, 'No audio preview available for this track.');
       }
